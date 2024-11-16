@@ -24,6 +24,7 @@ const OTP_DURATION = settings[Enviroment].OTP_DURATION;
 const simpleSwapApiKey = settings[Enviroment].SIMPLE_SWAP_API_KEY;
 
 const login = async (req, res, next) => {
+  console.log("====================login function called!===================")
   try {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
